@@ -43,3 +43,26 @@ FROM employees AS e
 	ON (dm.dept_no = d.dept_no)
 	
 SELECT * FROM department_manager_information
+
+--4.List the department of each employee with the following information: employee number,
+-- last name, first name, and department name.
+	-- need three tables: department, emoloyees
+	-- department: dept_name 
+	-- employee: last_name, first_name, emp.no
+
+
+CREATE VIEW employees_depts AS
+SELECT e.emp_no, e.last_name, e.first_name, d.dept_name
+FROM employees AS e
+  JOIN dept_manager AS dm
+  ON (e.emp_no = dm.emp_no)
+    JOIN department AS d
+    ON (d.dept_no = dm.dept_no);
+	
+SELECT * FROM employees_depts;
+
+--5. 
+	
+	
+	
+	
