@@ -28,10 +28,18 @@ SELECT * FROM employees_hired_1986
 
 --3. List the manager of each department with the following inforamtion: department number, department name
 --   the manager's employee number, last name, first_name and start and end of employee_dates
-	-- Tables needed: dept manager, employees, 
+	-- Tables needed: employees, dept_manager, department
+		-- from employees: last_name, first_name
+		-- dept_manager: dept_no, emp_no, from_date, to_date
+		-- department: dept_name
+		
 
 CREATE VIEW department_manager_information AS
-SELECT 
-
-
-
+SELECT dm.dept_no, d.dept_name, dm.emp_no, e.last_name, e.first_name, dm.from_date, dm.to_date
+FROM employees AS e
+  RIGHT JOIN dept_manager AS dm
+  ON (e.emp_no = dm.emp_no)
+    LEFT JOIN department AS d
+	ON (dm.dept_no = d.dept_no)
+	
+SELECT * FROM department_manager_information
