@@ -61,8 +61,45 @@ FROM employees AS e
 	
 SELECT * FROM employees_depts;
 
---5. 
+--5. List all employees whose first name is "Hercules" and last names begin with "B".
+
+SELECT emp_no, last_name, first_name
+FROM employees
+WHERE first_name = 'Hercules'
+AND last_name LIKE 'B%';
+
+-- 6. List all employees in the Sales department, including their employee number, last name, first name, and department name
+-- The tables that are needed are employees, department, dept_emp
+----depatment: dept_name
+----employees: emp_no, last_name, first_name
+
+SELECT e.emp_no, e.last_name, e.first_name, d.dept_name
+FROM employees AS e
+  FULL JOIN dept_emp AS de
+  ON (e.emp_no = de.emp_no)
+    FULL JOIN department AS d
+    ON (d.dept_no = de.dept_no)
+	  WHERE d.dept_name = 'Sales';
 	
+
 	
-	
-	
+-- 7. List all employees in the Sales and Development department, including their employee number, last name, first name, and department name
+-- The tables that are needed are employees, department, dept_emp
+----depatment: dept_name
+----employees: emp_no, last_name, first_name
+
+SELECT e.emp_no, e.last_name, e.first_name, d.dept_name
+FROM employees AS e
+  FULL JOIN dept_emp AS de
+  ON (e.emp_no = de.emp_no)
+    FULL JOIN department AS d
+    ON (d.dept_no = de.dept_no)
+	  WHERE d.dept_name = 'Sales'
+	  OR d.dept_name = 'Development';	
+
+-- 8. In descending order, list the frequency count of employee last names; i.e. how many employees share each last name
+
+SELECT last_name, COUNT(last_name) AS frequency_count_last_name
+FROM employees
+GROUP BY last_name
+ORDER BY frequency_count_last_name DESC;
