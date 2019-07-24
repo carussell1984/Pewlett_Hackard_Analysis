@@ -6,8 +6,8 @@ the database of employees from that period are six CSV files, located in the Res
 During this assigment tables were designed to hold data in the CSVs, CSVs were imported into a SQL database, and then questions were answered about the data. Thus, what was done were:
 
 
-  Data Modeling
-  Data Engineering
+  Data Modeling (/n)
+  Data Engineering (/n)
   Data Analysis
   
 # Data Analysis
