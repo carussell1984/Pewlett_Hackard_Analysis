@@ -3,7 +3,7 @@
 # Background
 Task at hand was a research project on employees of the corporation from the 1980s and 1990s, at Pewlett Hackard. All that remain of 
 the database of employees from that period are six CSV files, located in the Resources Folder.
-During this assigment tables were designed to hold data in the CSVs, CSVs were imported into a SQL database, and then questions were answered about the data. Thus, what was done were:
+During this assigment tables were designed to hold data in the CSVs, CSVs were imported into a SQL database, and then questions were answered about the data. Thus, the following steps were performed:
 
 
  * Data Modeling 
@@ -29,7 +29,7 @@ During data eximation, there is a suspicion that the dataset is fake. To confirm
   2. Create a bar chart of average salary by title.
 
 
-# Road Map of Pewlett Hackard GitHub
+# Road Map of Pewlett Hackard GitHub Repo
   * RESOURCES: 6 original Pewlett Hackard Files
   * DATA MODELING: Folder containing a schema of the data modeling
   * SQL_Files: SQL files of creating tables, an SQL file of the data analysis
