@@ -1,9 +1,9 @@
 # Pewlett_Hackard_Analysis
 
 # Background
-#Task at hand was a research project on employees of the corporation from the 1980s and 1990s, at Pewlett Hackard. All that remain of 
-#the database of employees from that period are six CSV files, located in the Resources Folder.
-#During this assigment tables were designed to hold data in the CSVs, CSVs were imported into a SQL database, and then questions were # #answered about the data. Thus, what was done were:
+Task at hand was a research project on employees of the corporation from the 1980s and 1990s, at Pewlett Hackard. All that remain of 
+the database of employees from that period are six CSV files, located in the Resources Folder.
+During this assigment tables were designed to hold data in the CSVs, CSVs were imported into a SQL database, and then questions were answered about the data. Thus, what was done were:
 
 
   #Data Modeling
