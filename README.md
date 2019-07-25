@@ -23,7 +23,7 @@ The following was perfromed during data analysis:
   8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
 
-During data eximation, there is a suspicion that the dataset is fake. To confirm this hunch, the following steps were taken to generate a visualization of the data:
+During data examination, there is a suspicion that the dataset is fake. To confirm this hunch, the following steps were taken to generate a visualization of the data:
 
   1. Import the SQL database into Pandas. 
   2. Create a bar chart of average salary by title.
